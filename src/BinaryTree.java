@@ -22,7 +22,7 @@ public class BinaryTree {
 		{			
 			postOrderPrint(n.left);
 			postOrderPrint(n.right);
-			System.out.println(n.toString());
+			System.out.print(n.toString());
 		}
 	}
 	

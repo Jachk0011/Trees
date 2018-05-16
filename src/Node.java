@@ -1,6 +1,7 @@
 
 public class Node {
 	int value;
+	String letter;
 	Node right, left; //pointers, only two because it's for a binary tree
 	
 	public Node () {} //constructor
@@ -10,9 +11,14 @@ public class Node {
 		this.value = value;
 	}
 	
+	public Node(String value) //constructor
+	{
+		this.letter = value;
+	}
+	
 	public String toString()
 	{
-		return "Value: " + this.value;
+		return this.letter + " ";
 	}
 	
 	public Node clone()
